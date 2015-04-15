@@ -1,0 +1,39 @@
+{
+  "name": "ho-conformance-base",
+  "version": "0.0.0",
+  "description": "Base ho conformance plugin task",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tape ./spec/*.js",
+    "build": "rm -rf dist && babel lib --out-dir dist",
+    "watch": "babel --watch lib --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hocss/ho-conformance-base.git"
+  },
+  "keywords": [
+    "ho",
+    "conformance",
+    "task",
+    "module",
+    "plugin",
+    "base",
+    "abstract"
+  ],
+  "author": "Matt Styles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hocss/ho-conformance-base/issues"
+  },
+  "homepage": "https://github.com/hocss/ho-conformance-base",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "core-js": "^0.8.3",
+    "ho-conformance-events": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel": "^5.1.8"
+  }
+}
