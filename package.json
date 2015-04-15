@@ -1,6 +1,6 @@
 {
   "name": "ho-conformance-base",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Base ho conformance plugin task",
   "main": "dist/index.js",
   "scripts": {
